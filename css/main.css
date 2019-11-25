@@ -19,7 +19,6 @@ body {
 
 header {
   margin: 0;
-  padding: 1% 2%;
 }
 
 .topnav {
@@ -43,11 +42,14 @@ ul.topnav li a {
 }
 
 menu {
-  padding: 0;
+  padding: 1% 2%;
   margin: 0;
+  position:fixed;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  width: 100vw;
+  background: white;
 }
 
 #section1 {
@@ -84,7 +86,7 @@ menu {
 .underlined-titles {
   text-align: center;
   width: auto;
-  margin: 0 auto;
+  margin: 0 auto 5%;
   padding: 0.5%;
   border-bottom: #21ba7f solid 4px;
 }
@@ -108,10 +110,12 @@ h5 {
   font-size: 2em;
   font-weight: bold;
   color: #21ba7f;
+  margin: 0;
 }
 h6 {
-  font-size: 1.5em;
+  font-size: 1.7em;
   font-weight: lighter;
+  margin: 6% 0;
 }
 .column {
   padding: 0 2%;
