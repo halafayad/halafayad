@@ -1,174 +1,165 @@
-/*
-Colors:
-
-Text: 1A1A1A
-Green: #00B172
-White: #FFF
-
-*/
-
-* {
-  box-sizing: border-box;
-  font-family: Helvetica;
-}
-
-body {
-  margin: 0;
-  padding: 0;
+html {
+  font-family: 'Roboto', sans-serif;
 }
 
 header {
-  margin: 0;
-}
-
-.topnav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 423px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-ul.topnav li a {
-  display: block;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  color: black;
-  font-size: 1.3em;
-  font-weight: lighter;
-}
-
-menu {
-  padding: 1% 2%;
-  margin: 0;
-  position:fixed;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   width: 100vw;
-  background: white;
 }
 
-#section1 {
-  margin:0;
-  padding:0;
-  background: url("../images/landing.jpg") no-repeat;
-  -webkit-background-size: cover;
+header a {
+  text-decoration: none;
+}
+
+header .header-button {
+  background-color: #4DC3F9;
+  width: 235px;
+  height: 40px;
+  margin: 30px auto;
+  display: block;
+  border: none;
+  border-radius: 6px;
+  color: #ffffff;
+}
+
+header img {
+  width: 150px;
+  margin: 30px auto;
+  display: block;
+}
+
+.cohort-picture {
+  width: 100vw;
+  height: 410px;
+  background-image: url("../img/squad.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
-  height: 100vh;
-  color: white;
-  display: flex;
-  justify-content: center;
-  flex-direction: column ;
+}
+
+#bootcamp-program {
+  padding: 0 35px;
+}
+
+.intro-program h1 {
+  font-family: 'Roboto mono', sans-serif;
+  font-size: 32px;
   text-align: center;
+  color: #2D354C;
 }
 
-#section2 {
-  margin:0;
-  color: black;
-  background-color: white;
-  display: flex;
-  justify-content: flex-start;
-  align-items:center;
+.intro-program p {
+  font-size: 18px;
+  color: #818693;
+  line-height: 30px;
+}
+
+.card-program {
+  background-color: #F8F8F8;
+  border-radius: 6px;
   text-align: center;
-  flex-direction:column;
+  padding: 24px;
+  margin-bottom: 35px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-#section3 {
-  background-color: #1AB26B;
-  color: white;
-  padding:5%;
-  height: auto;
-  display: flex;
-  justify-content: space-between;
-  flex-flow: row;
+.card-program .card-time {
+  color: #EC3A35;
+  font-size: 14px;
 }
 
-.column-3 {
+.card-program .card-title {
+  font-family: 'Roboto mono', sans-serif;
+  font-size: 28px;
+  line-height: 30px;
+}
+
+.card-program .card-schedule {
+  color: #818693;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+#bootcamp-figures {
+ background-color: #4DC3F9;
+ padding: 20px;
+}
+
+h2.figures-title {
+  color: #ffffff;
+  font-size: 30px;
+  font-family: 'Roboto mono', sans-serif;
+  text-align: center;
+  line-height: 40px;
+  font-weight: 500;
+}
+
+.figures-wrapper {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
-  height:auto;
-  width: 80%;
 }
 
-.column{
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.column > * {
-  height:auto;
-}
-
-.column-3 img{
-  max-height: 120px;
-}
-
-.green-underlined-title {
+.figures-wrapper .figure {
+  flex: 0 0 50%;
   text-align: center;
-  width: auto;
-  margin: 0 auto 5%;
-  padding: 0.5%;
-  border-bottom: #1AB26B solid 4px;
+  font-size: 90px;
+  font-family: 'Roboto mono', sans-serif;
+  margin-bottom: 20px;
 }
-.white-underlined-title {
-  text-align: left;
-  width: max-content;
-  margin: 0 0 5% 0;
-  padding: 0.5%;
-  border-bottom: white solid 4px;
+
+.figures-wrapper .figure span {
+  font-size: 20px;
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
 }
-h1 {
-  font-size: 5em;
-  margin: 2%;
-  line-height: 0.9em;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+header a {
+  text-decoration: none;
 }
-h3 {
-  font-size: 2.5em;
-  font-weight: normal;
-  margin: 0;
+
+header a button {
+  color: white;
+  height: 40px;
+  width: 235px;
+  background-color: #00b4fe;
+  border: none;
+  border-radius: 6px;
+  margin: 30px auto;
+  display: block;
 }
-h4 {
-  font-size: 2em;
-  font-weight: lighter;
-  margin: 2%;
-  line-height: 1.4em;
+
+header img {
+  width: 150px;
+  margin: 10px auto;
+  display: block;
 }
-h5 {
-  font-size: 1.9em;
-  font-weight: bold;
-  margin: 0;
+
+.squad-picture {
+  background-image: url("../img/squad.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 375px;
 }
-#section2 h5 {
-  color: #1AB26B;
-}
-#section3 h5 {
-  margin: 0 0 2%;
-}
-h6 {
-  font-size: 1.7em;
-  font-weight: lighter;
-}
-/* #section2 h6 {
-  margin: 6% 0;
-} */
-#section3 h6 {
-  margin: 0 0 4%;
-  line-height: 1.3em;
-/* }
-.column {
-  padding: 0 2%;
-} */
-/* .column-3 img {
-  padding-bottom: 2%;
-} */
-.spotify-icon-white {
-  margin: auto 0;
-}
+
+*/
