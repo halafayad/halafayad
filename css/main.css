@@ -34,6 +34,15 @@ header img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -110px;
+}
+
+.cohort-title {
+  font-size: 35px;
+  color: white;
 }
 
 #bootcamp-program {
@@ -84,13 +93,17 @@ header img {
  padding: 20px;
 }
 
-h2.figures-title {
-  color: #ffffff;
+h2 {
   font-size: 30px;
   font-family: 'Roboto mono', sans-serif;
   text-align: center;
   line-height: 40px;
   font-weight: 500;
+  margin-top: 0;
+}
+
+h2.figures-title {
+  color: #ffffff;
 }
 
 .figures-wrapper {
@@ -114,6 +127,135 @@ h2.figures-title {
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
 }
+
+.projects-wrapper {
+  padding: 0 35px;
+}
+.card-project {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  background-color: white;
+}
+.card-project img {
+  width: 100%;
+  border-radius: 6px;
+}
+.card-project h3 {
+  padding: 0 0 10px 10px;
+  font-size: 20px;
+}
+
+.students-wrapper, .teachers-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.student, .teacher {
+  text-align: center;
+  padding:8px;
+}
+.student-name, .teacher-name {
+  font-size: 18px;
+  font-family:'Roboto mono', sans-serif;
+  margin-bottom: 0;
+}
+.student-tagline, .teacher-tagline {
+  font-size: 14px;
+  color:#818693;
+}
+
+#bootcamp-students {
+  padding: 20px 0;
+}
+
+#bootcamp-projects, #bootcamp-teachers {
+  background-color: #F8F8F8;
+  padding: 20px 0;
+}
+
+footer {
+  background-color: #4DC3F9;
+  padding-top: 35px;
+  padding-bottom: 30px;
+}
+
+footer h2 {
+  color: white;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+.footer-button {
+  background-color: #white;
+  width: 235px;
+  height: 40px;
+  margin: 30px auto;
+  display: block;
+  border: none;
+  border-radius: 6px;
+  color: #4DC3F9;
+}
+
+@media all and (min-width: 750px) {
+    .cohort-picture {
+      height: 620px;
+    }
+    .cohort-title {
+      font-size: 70px;
+    }
+    .cards-wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .card-program {
+      width: 42%;
+    }
+    .figures-wrapper .figure {
+      flex-basis:25%;
+    }
+    .projects-wrapper {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      width: 80vw;
+      margin: 0 auto;
+    }
+    .card-project {
+      width: 45%;
+      margin: 20px 10px;
+    }
+    .card-project h3 {
+      padding: 0 0 0 20px;
+    }
+    .students-wrapper, .teachers-wrapper {
+      width: 80vw;
+      margin: 0 auto;
+    }
+    .student, .teacher {
+      padding: 20px;
+    }
+    .header-button {
+      position: absolute;
+      right: 40px;
+      top: 10px;
+    }
+}
+
+@media all and (min-width: 1024px) {
+  .card-program {
+    width: 44%;
+  }
+  .card-project {
+    width: 30%;
+    margin: 20px 10px;
+  }
+}
+
+
 
 
 
